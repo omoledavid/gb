@@ -82,6 +82,24 @@
             });
         })(jQuery);
     </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style type="text/stylesheet">
+        @-webkit-viewport {
+            width: device-width;
+        }
+        @-moz-viewport {
+            width: device-width;
+        }
+        @-ms-viewport {
+            width: device-width;
+        }
+        @-o-viewport {
+            width: device-width;
+        }
+        @viewport {
+            width: device-width;
+        }
+    </style>
     <style>
         #gcbcustomer a.news-ext-link {
             bottom: 85px;
