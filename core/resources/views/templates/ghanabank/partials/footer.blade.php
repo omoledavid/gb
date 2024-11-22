@@ -1,85 +1,87 @@
-@php
-$footer = getContent('footer.content', true);
-$datas = getContent('footer.element');
-$contacts = getContent('contact_us.element');
-$about = getContent('about.content', true);
-$links = getContent('pages.element');
-@endphp
+<footer class="footer">
+    <div class="footer__top">
+        <img class="footer__top-img" src="{{ asset($activeTemplateTrue. 'home/images/images-logo.png')}}" alt="GCB LOGO"/>
+        <div class="footer__row">
+            <div class="footer__columns">
+                <div class="moduletable">
+                    <h3 class="footer__columns-title">Business Hours</h3>
 
-<!-- footer section start -->
-<footer class="footer position-relative z-index-2">
-  <script src="//code.tidio.co/czifoty9klnkkvbvt32yjwyj3o4iadrt.js" async></script>
-  <div class="footer-bottom-wave">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#ffffff" fill-opacity="1" d="M0,256L48,266.7C96,277,192,299,288,282.7C384,267,480,213,576,165.3C672,117,768,75,864,96C960,117,1056,203,1152,213.3C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-    </svg>
-  </div>
-
-  <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-4 col-sm-6 order-lg-1 order-1">
-        <div class="footer-widget">
-          <h3 class="footer-widget__title">@lang('About Us')</h3>
-          <p>{{ __(@$about->data_values->subheading) }}</p>
-          <ul class="social-media-links d-flex align-items-center mt-3">
-            @foreach($datas as $data)
-            <li>
-              <a href="{{ $data->data_values->social_link }}" target="_blank">
-                @php echo $data->data_values->social_icon; @endphp
-              </a>
-            </li>
-            @endforeach
-          </ul>
+                    <div class="custom">
+                        <p><span style="color: #ffff00">8:30am-4:00pm;</span></p>
+                        <p><span style="color: #ffff00">Monday-Friday</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__columns">
+                <div class="moduletable">
+                    <h3 class="footer__columns-title">Personal Banking</h3>
+                    <ul class="nav menu">
+                        <li class="item-413"><a href="gcb-current-account.html" class="">Current Accounts </a></li>
+                        <li class="item-414"><a href="savings-accounts.html" class="">Saving Accounts </a></li>
+                        <li class="item-415"><a href="loans.html" class="">Loans </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__columns">
+                <div class="moduletable">
+                    <h3 class="footer__columns-title">Business Banking</h3>
+                    <ul class="nav menu">
+                        <li class="item-416"><a href="business.html" class="">Your Bank for Business </a></li>
+                        <li class="item-417"><a href="savings-account.html" class="">Business Accounts </a></li>
+                        <li class="item-418"><a href="sme-solution.html" class="">SME Solutions </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__columns">
+                <div class="moduletable">
+                    <h3 class="footer__columns-title">Services</h3>
+                    <ul class="nav menu">
+                        <li class="item-422"><a href="347-2023-tariff-guide.html" class="" target="_blank"
+                                                rel="noopener noreferrer">Tariff Guide </a></li>
+                        <li class="item-419"><a href="eproducts-cards.html" class="">Electronic Banking </a></li>
+                        <li class="item-420"><a href="loans.html" class="">Loans &amp; Overdrafts </a></li>
+                        <li class="item-421"><a href="remittance.html" class="">Money Transfer </a></li>
+                        <li class="item-862"><a href="research-reports.html" class="">Research Reports</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__columns">
+                <div class="moduletable">
+                    <h3 class="footer__columns-title">Investor relations</h3>
+                    <ul class="nav menu">
+                        <li class="item-469"><a href="https://www.gcbcapital.com.gh" class="" target="_blank"
+                                                rel="noopener noreferrer">GCB Capital </a></li>
+                        <li class="item-423"><a href="group-results-and-reporting.html" class="">Group Results and
+                                Reporting</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__columns">
+                <div class="moduletable">
+                    <h3 class="footer__columns-title">About GCB Bank</h3>
+                    <ul class="nav menu">
+                        <li class="item-427"><a href="our-propose.html" class="">Corporate Info.</a></li>
+                        <li class="item-461"><a href="electronic-terms.html" class="">Electronic Banking T&amp;C's</a>
+                        </li>
+                        <li class="item-976"><a href="general-privacy-policy.html" class="">General Privacy Policy</a>
+                        </li>
+                        <li class="item-1221"><a href="cyber-information-security-policy.html" class="">Cyber &amp;
+                                Information Security Policy</a></li>
+                        <li class="item-430"><a href="privacy-policy.html" class="">Mobile App Privacy Policy</a></li>
+                        <li class="item-913"><a href="cybersecurity-tips.html" class="">Cybersecurity Tips</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-lg-2 col-sm-6 order-lg-2 order-3">
-        <div class="footer-widget">
-          <h3 class="footer-widget__title">@lang('Quick Links')</h3>
-          <ul class="short-link-list">
-            <li><a href="{{ route('user.login') }}">@lang('Login')</a></li>
-            <li><a href="{{ route('user.register') }}">@lang('Register')</a></li>
-            <li><a href="{{ route('contact') }}">@lang('Contact')</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-2 col-sm-6 order-lg-3 order-4">
-        <div class="footer-widget">
-          <h3 class="footer-widget__title">@lang('Page')</h3>
-          <ul class="short-link-list">
-            @foreach($links as $link)
-            <li>
-              <a href="{{ route('page', [$link->id,slug($link->data_values->title)]) }}">
-                {{ __($link->data_values->title) }}</a>
-            </li>
-            @endforeach
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 order-lg-4 order-2">
-        <div class="footer-widget">
-          <h3 class="footer-widget__title">@lang('Contact Us')</h3>
-          <ul class="footer-info-list">
-            @foreach($contacts as $contact)
-            <li>
-              @php echo $contact->data_values->icon; @endphp
-              <p>{{ $contact->data_values->address }}</p>
-            </li>
-            @endforeach
-          </ul>
-        </div>
-      </div>
     </div>
     <div class="footer__bottom">
-      <div class="row gy-4 align-items-center">
-        <div class="col-lg-3 col-sm-6 order-lg-1 order-1 text-sm-start text-center">
-          <a href="{{ route('home') }}" class="footer-logo"><img src="{{getImage(imagePath()['logoIcon']['path'] .'/logo.png')}}" alt="logo"></a>
-        </div>
-
-        <div class="col-lg-9 col-sm-6 order-lg-3 order-2 text-sm-end text-center">
-          <p>{{ __(@$footer->data_values->text) }}</p>
-        </div>
-      </div>
+        <p>Copyright © 2024 GCB Bank Ghana PLC</p>
+        <p>Inspired by <a href="http://www.dreamoval.com">DreamOval</a></p>
     </div>
-  </div>
 </footer>
-<!-- footer section end -->
+<!-- //FOOTER -->
+</div>
+<script type="text/javascript" src="{{ asset($activeTemplateTrue. 'home/js/rightnow-RightNow.Client.js')}}"></script>
+
+</body>
+</html>
