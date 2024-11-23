@@ -1,5 +1,5 @@
 <li class="item-154"><a href="https://www.gcbcapital.com.gh" class="" target="_blank" rel="noopener noreferrer">GCB Capital </a></li>
-<li class="item-155"><a href="about-us.html" class="">About GCB</a></li>
+<li class="item-155"><a href="{{ route('about-us') }}" class="">About GCB</a></li>
 <li class="item-395"><a href="board-members.html" class="">Board Members</a></li>
 <li class="item-153"><a href="downloads.html" class="">Downloads</a></li>
 <li class="item-394"><a href="contact.html" class="">Customer Experience </a></li>

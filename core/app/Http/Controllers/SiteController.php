@@ -66,6 +66,13 @@ class SiteController extends Controller
         return view($this->activeTemplate . 'contact',compact('pageTitle', 'sections'));
     }
 
+    public function aboutUs()
+    {
+        $pageTitle = "About Us";
+        $sections   = Page::where('tempname',$this->activeTemplate)->where('slug','contact')->first();
+        return view($this->activeTemplate . 'about',compact('pageTitle', 'sections'));
+    }
+
 
     public function contactSubmit(Request $request)
     {

@@ -17,6 +17,7 @@
     <link href="{{ asset($activeTemplateTrue. 'home/css/css-custom.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset($activeTemplateTrue. 'home/css/css-home.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset($activeTemplateTrue. 'home/css/css-mod_sj_carousel.css') }}" rel="stylesheet" type="text/css" />
+    <script src="https://code.tidio.co/o9rjkmn77qie2698bbdlzhteasqfggc4.js" async></script>
     <style type="text/css">
         .span9 {
             width: 880px;

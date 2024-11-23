@@ -565,6 +565,7 @@ Route::name('user.')->prefix('user')->group(function () {
 Route::post('/subscribe', 'SiteController@addSubscriber')->name('subscribe');
 Route::get('/contact', 'SiteController@contact')->name('contact');
 Route::post('/contact', 'SiteController@contactSubmit');
+Route::get('/about-us', 'SiteController@aboutUs')->name('about-us');
 
 Route::get('/change/{lang?}', 'SiteController@changeLanguage')->name('lang');
 
